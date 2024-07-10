@@ -75,40 +75,66 @@
                 line-height: inherit;
             }
         </style>
+        <style type="text/css">
+            @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+        </style>
+        <style type="text/css">
+            @media only screen and (max-width: 480px) {
+                table.bg-table {
+                    background-color: #ffffff !important;
+                    width: 96% !important;
+                }
+
+                table.main-table {
+                    width: 96% !important;
+
+                }
+
+                .pad-64 {
+                    padding-left: 16px !important;
+                    padding-right: 16px !important;
+                }
+
+                td.address {
+                    width: 220px !important;
+                }
+
+            }
+        </style>
     </head>
 
     <body id="body" style="margin: 0 !important; padding: 0 !important;" bgcolor="#D2D5DA">
-        <table role="presentation" border="0" padding="0" cellspacing="0" width:"100%" bgcolor="#D2D5DA" align="center"
-            style="width: 100% !important;">
+        <table class="bg-table" role="presentation" border="0" padding="0" cellspacing="0" width="100%"
+            bgcolor="#D2D5DA" align="center">
             <tr>
                 <td>
-                    <table role="presentation" border="0" padding="0" cellspacing="0" width:"640px" bgcolor="#ffffff"
-                        align="center" style="font-family: Arial, Helvetica, sans-serif; width: 640px !important;">
+                    <table class="main-table" role="presentation" border="0" padding="0" cellspacing="0" width="640"
+                        bgcolor="#ffffff" align="center" style="font-family: Manrope, Arial, Helvetica, sans-serif;">
                         <!-- Company Logo -->
                         <tr>
-                            <td style="padding: 64px; padding-bottom: 24px !important;">
+                            <td class="logo-cell pad-64" style="padding: 64px; padding-bottom: 24px !important;">
                                 <img src="./companyLogo.png" alt="company logo" border="0"
                                     style="display: block; margin: 0; width: 79.33px;" />
                             </td>
                         </tr>
                         <!-- Header -->
                         <tr>
-                            <td style="padding: 0px 64px">
-                                <h1
-                                    style="font-family: Arial, Helvetica, sans-serif; font-weight: 600; font-size: 24px; line-height: 28px;">
+                            <td class="pad-64" style="padding: 0px 64px">
+                                <h1 class="header"
+                                    style="font-family: Manrope, Arial, Helvetica, sans-serif; font-weight: 600; font-size: 24px; line-height: 28px;">
                                     Hello ajoritsedere@gmail.com</h1>
                                 <p
-                                    style="font-family: Arial, Helvetica, sans-serif; font-weight: 400; font-size: 16px; line-height: 24px;">
+                                    style="font-family: Manrope, Arial, Helvetica, sans-serif; font-weight: 400; font-size: 16px; line-height: 24px;">
                                     We're pleased to provide you with a quote for your shipment.</p>
                             </td>
                         </tr>
                         <!-- Main Content -->
                         <tr>
                             <td>
-                                <table role="presentation" border="0" padding="0" cellspacing="0" width:"100%">
+                                <table role="presentation" border="0" padding="0" cellspacing="0" width="100%">
                                     <!-- Row 1 Delivery Details -->
                                     <tr>
-                                        <td style="padding: 0 64px;">
+                                        <td class="pad-64" style="padding: 0 64px;">
                                             <div
                                                 style="font-size: 16px; font-weight: 600; color: #1F2937; padding-bottom: 16px;">
                                                 Delivery
@@ -121,7 +147,7 @@
                                                         style="padding-bottom: 10px; padding-top: 16px; padding-left: 16px;">
                                                         <div style="margin-top: -19px;">From</div>
                                                     </td>
-                                                    <td
+                                                    <td class="address"
                                                         style="padding-bottom: 10px; padding-top: 16px; padding-right: 16px; width: 300px; text-align: right;">
                                                         <div>
                                                             Apt. 884, Moreno
@@ -136,7 +162,7 @@
                                                             style="margin-top: -19px; padding-bottom: 16px; padding-left: 16px;">
                                                             To</div>
                                                     </td>
-                                                    <td
+                                                    <td class="address"
                                                         style="width: 300px; text-align: right; padding-bottom: 16px; padding-right: 16px;">
                                                         <div>
                                                             Suite 472, Peabody,
@@ -151,12 +177,12 @@
                                     </tr>
                                     <!-- Row 2 Package Details -->
                                     <tr>
-                                        <td style="padding: 20px 64px 0;">
+                                        <td class="pad-64" style="padding: 20px 64px 0;">
                                             <div
                                                 style="font-size: 16px; font-weight: 600; color: #1F2937; padding-bottom: 16px; padding-top: 16px;">
                                                 Package Details</div>
                                             <table role="presentation" border="0" padding="0" cellspacing="0"
-                                                width:"100%" style="width: 100% !important;">
+                                                width="100%">
                                                 <tr style="border-bottom: 1px solid #D9D9D9;">
                                                     <td
                                                         style="font-size: 14px; font-weight: 400; color: #676767; padding-bottom: 10px;">
@@ -204,7 +230,7 @@
                                     </tr>
                                     <!-- Row 3 -->
                                     <tr>
-                                        <td style="padding: 34px 64px 40px 64px; text-align: right;">
+                                        <td class="pad-64" style="padding: 34px 64px 40px 64px; text-align: right;">
                                             <div
                                                 style="font-size: 14px; font-weight: 500; color: #999999; padding-bottom: 18px;">
                                                 Subtotal
@@ -220,7 +246,7 @@
                                     </tr>
                                     <!-- Row 4 -->
                                     <tr>
-                                        <td style="padding: 0 64px;">
+                                        <td class="pad-64" style="padding: 0 64px;">
                                             <div style="padding-bottom: 20px; color: #333333; font-size: 16px;">Ready to
                                                 move forward? Sign up as a
                                                 business user to book your shipment
@@ -236,7 +262,7 @@
                         </tr>
                         <!-- Footer -->
                         <tr>
-                            <td style="padding: 64px !important">
+                            <td class="pad-64" style="padding: 64px">
                                 <table role="presentation" border="0" padding="0" cellspacing="0"
                                     style="width: 100% !important;">
                                     <tr>
